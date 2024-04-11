@@ -1,0 +1,13 @@
+
+#.Epoch 0
+  2%|████▏                                                                                                                                                                                                                                                                        | 19/1232 [00:03<03:27,  5.84it/s]
+Traceback (most recent call last):
+  File "/home/tefan/projects/BachModels/src/train.py", line 124, in <module>
+    trainer.train()
+  File "/home/tefan/projects/BachModels/src/train.py", line 75, in train
+    train_loss, train_cer, train_wer = self.train_epoch()
+                                       ^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/train.py", line 54, in train_epoch
+    total_loss += loss.item()
+                  ^^^^^^^^^^^
+KeyboardInterrupt

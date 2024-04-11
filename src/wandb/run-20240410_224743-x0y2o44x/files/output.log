@@ -1,0 +1,17 @@
+  0%|          | 0/10 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/tefan/projects/BachModels/src/train.py", line 123, in <module>
+    trainer.train()
+  File "/home/tefan/projects/BachModels/src/train.py", line 74, in train
+    train_loss, train_cer, train_wer = self.train_epoch()
+                                       ^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/train.py", line 50, in train_epoch
+    output_logits, sampled_ids, loss = self.model.forward_teacher_forcing(inputs, labels)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 254, in forward_teacher_forcing
+    logits = self.decoder.forward_teacher_forcing(memory, targets)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 175, in forward_teacher_forcing
+    tgt = torch.cat([
+          ^^^^^^^^^^^
+RuntimeError: Sizes of tensors must match except in dimension 0. Expected size 1 but got size 364 for tensor number 1 in the list.

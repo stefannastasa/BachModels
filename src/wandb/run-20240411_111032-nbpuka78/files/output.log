@@ -1,0 +1,32 @@
+
+#.Epoch 0
+  0%|                                                                                                                                                                                                                                                                                      | 0/1232 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/tefan/projects/BachModels/src/train.py", line 125, in <module>
+    trainer.train()
+  File "/home/tefan/projects/BachModels/src/train.py", line 76, in train
+    train_loss, train_cer, train_wer = self.train_epoch()
+                                       ^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/train.py", line 55, in train_epoch
+    res = self.model.calculate_metrics(output_logits, labels)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 287, in calculate_metrics
+    cer = self.cer_metric(preds, targets)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torchmetrics/metric.py", line 302, in forward
+    self._forward_cache = self._forward_full_state_update(*args, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torchmetrics/metric.py", line 317, in _forward_full_state_update
+    self.update(*args, **kwargs)
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torchmetrics/metric.py", line 466, in wrapped_func
+    update(*args, **kwargs)
+  File "/home/tefan/projects/BachModels/src/metrics.py", line 16, in update
+    assert preds.ndim == target.ndim
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

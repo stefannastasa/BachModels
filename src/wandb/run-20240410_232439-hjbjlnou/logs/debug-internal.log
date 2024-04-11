@@ -1,0 +1,433 @@
+2024-04-10 23:24:39,742 INFO    StreamThr :379383 [internal.py:wandb_internal():86] W&B internal server running at pid: 379383, started at: 2024-04-10 23:24:39.741026
+2024-04-10 23:24:39,744 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status
+2024-04-10 23:24:39,755 INFO    WriterThread:379383 [datastore.py:open_for_write():87] open: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/run-hjbjlnou.wandb
+2024-04-10 23:24:39,755 DEBUG   SenderThread:379383 [sender.py:send():379] send: header
+2024-04-10 23:24:39,762 DEBUG   SenderThread:379383 [sender.py:send():379] send: run
+2024-04-10 23:24:40,215 INFO    SenderThread:379383 [dir_watcher.py:__init__():211] watching files in: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files
+2024-04-10 23:24:40,215 INFO    SenderThread:379383 [sender.py:_start_run_threads():1124] run started: hjbjlnou with start time 1712780679.742076
+2024-04-10 23:24:40,242 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: check_version
+2024-04-10 23:24:40,242 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: check_version
+2024-04-10 23:24:40,460 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: run_start
+2024-04-10 23:24:40,482 DEBUG   HandlerThread:379383 [system_info.py:__init__():26] System info init
+2024-04-10 23:24:40,482 DEBUG   HandlerThread:379383 [system_info.py:__init__():41] System info init done
+2024-04-10 23:24:40,482 INFO    HandlerThread:379383 [system_monitor.py:start():194] Starting system monitor
+2024-04-10 23:24:40,482 INFO    SystemMonitor:379383 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-10 23:24:40,482 INFO    HandlerThread:379383 [system_monitor.py:probe():214] Collecting system info
+2024-04-10 23:24:40,484 INFO    SystemMonitor:379383 [interfaces.py:start():190] Started cpu monitoring
+2024-04-10 23:24:40,484 INFO    SystemMonitor:379383 [interfaces.py:start():190] Started disk monitoring
+2024-04-10 23:24:40,484 INFO    SystemMonitor:379383 [interfaces.py:start():190] Started gpu monitoring
+2024-04-10 23:24:40,485 INFO    SystemMonitor:379383 [interfaces.py:start():190] Started memory monitoring
+2024-04-10 23:24:40,485 INFO    SystemMonitor:379383 [interfaces.py:start():190] Started network monitoring
+2024-04-10 23:24:40,491 DEBUG   HandlerThread:379383 [system_info.py:probe():150] Probing system
+2024-04-10 23:24:40,493 DEBUG   HandlerThread:379383 [system_info.py:_probe_git():135] Probing git
+2024-04-10 23:24:40,499 DEBUG   HandlerThread:379383 [system_info.py:_probe_git():143] Probing git done
+2024-04-10 23:24:40,499 DEBUG   HandlerThread:379383 [system_info.py:probe():198] Probing system done
+2024-04-10 23:24:40,499 DEBUG   HandlerThread:379383 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-25-generic-x86_64-with-glibc2.38', 'python': '3.11.6', 'heartbeatAt': '2024-04-10T20:24:40.491999', 'startedAt': '2024-04-10T20:24:39.728761', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/tefan/projects/BachModels/src/train.py', 'codePathLocal': 'train.py', 'codePath': 'src/train.py', 'git': {'remote': 'git@github.com:stefannastasa/BachModels.git', 'commit': 'f6c40370170fc252cbfdeef7122a089f15f6207a'}, 'email': None, 'root': '/home/tefan/projects/BachModels', 'host': 'tefans-homelab', 'username': 'tefan', 'executable': '/home/tefan/projects/BachModels/.venv/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 4000.003, 'min': 800.0, 'max': 4200.0}, 'cpu_freq_per_core': [{'current': 4000.005, 'min': 800.0, 'max': 4200.0}, {'current': 4000.013, 'min': 800.0, 'max': 4200.0}, {'current': 4000.084, 'min': 800.0, 'max': 4200.0}, {'current': 4000.014, 'min': 800.0, 'max': 4200.0}, {'current': 4000.004, 'min': 800.0, 'max': 4200.0}, {'current': 4000.06, 'min': 800.0, 'max': 4200.0}, {'current': 4000.076, 'min': 800.0, 'max': 4200.0}, {'current': 4000.035, 'min': 800.0, 'max': 4200.0}], 'disk': {'/': {'total': 107.50220108032227, 'used': 85.930908203125}}, 'gpu': 'NVIDIA GeForce GTX 1660 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1660 Ti', 'memory_total': 6442450944}], 'memory': {'total': 15.31381607055664}}
+2024-04-10 23:24:40,499 INFO    HandlerThread:379383 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-10 23:24:40,499 INFO    HandlerThread:379383 [system_monitor.py:probe():227] Publishing system info
+2024-04-10 23:24:40,500 INFO    HandlerThread:379383 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-10 23:24:40,502 DEBUG   SenderThread:379383 [sender.py:send():379] send: files
+2024-04-10 23:24:40,502 INFO    SenderThread:379383 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-10 23:24:40,622 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-10 23:24:40,622 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: python_packages
+2024-04-10 23:24:40,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:24:40,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:24:40,623 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:24:40,982 DEBUG   SenderThread:379383 [sender.py:send():379] send: telemetry
+2024-04-10 23:24:41,181 INFO    wandb-upload_0:379383 [upload_job.py:push():131] Uploaded file /tmp/tmpipdhownhwandb/w4nfxsrv-wandb-metadata.json
+2024-04-10 23:24:41,216 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_created():271] file/dir created: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/requirements.txt
+2024-04-10 23:24:41,216 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_created():271] file/dir created: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:24:41,216 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_created():271] file/dir created: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/wandb-metadata.json
+2024-04-10 23:24:43,215 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:24:44,867 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:24:45,216 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:24:47,216 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:24:49,217 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:24:49,935 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:24:51,217 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:24:53,218 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:24:55,136 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:24:55,218 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:24:55,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:24:55,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:24:55,623 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:24:57,219 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:24:59,219 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:00,296 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:01,220 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:03,220 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:05,221 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:05,321 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:07,221 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:09,222 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:10,358 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:10,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:25:10,623 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:25:10,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:25:11,222 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/config.yaml
+2024-04-10 23:25:11,222 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:13,223 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:15,223 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:15,757 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:17,224 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:19,224 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:20,845 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:21,224 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:23,225 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:25,225 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:25,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:25:25,623 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:25:25,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:25:25,868 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:27,226 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:29,226 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:30,925 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:31,226 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:33,227 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:35,227 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:36,020 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:37,228 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:39,228 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:40,486 DEBUG   SystemMonitor:379383 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-10 23:25:40,486 DEBUG   SenderThread:379383 [sender.py:send():379] send: stats
+2024-04-10 23:25:40,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:25:40,623 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:25:40,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:25:41,045 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:41,229 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:43,229 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:45,229 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:46,161 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:47,230 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:49,230 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:51,231 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:51,245 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:53,231 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:55,232 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:55,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:25:55,623 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:25:55,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:25:56,350 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:25:57,232 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:25:59,233 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:01,233 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:01,416 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:03,233 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:05,234 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:06,491 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:07,234 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:09,236 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:10,487 DEBUG   SenderThread:379383 [sender.py:send():379] send: stats
+2024-04-10 23:26:10,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:26:10,623 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:26:10,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:26:11,237 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:11,530 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:13,237 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:15,237 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:16,599 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:17,238 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:19,238 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:21,239 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:21,637 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:23,239 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:25,240 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:25,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:26:25,623 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:26:25,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:26:26,762 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:27,240 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:29,241 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:31,241 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:31,810 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:33,242 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:35,242 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:36,920 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:37,243 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:39,243 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:40,487 DEBUG   SenderThread:379383 [sender.py:send():379] send: stats
+2024-04-10 23:26:40,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:26:40,623 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:26:40,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:26:41,244 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:41,989 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:43,244 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:45,244 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:47,139 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:47,245 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:49,245 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:51,246 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:52,204 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:53,246 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:55,247 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:55,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:26:55,624 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:26:55,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:26:57,247 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:26:57,316 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:26:59,248 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:01,248 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:02,382 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:03,249 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:05,249 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:07,250 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:07,549 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:09,250 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:10,488 DEBUG   SenderThread:379383 [sender.py:send():379] send: stats
+2024-04-10 23:27:10,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:27:10,624 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:27:10,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:27:11,251 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:12,734 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:13,251 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:15,252 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:17,252 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:17,782 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:19,253 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:21,253 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:22,939 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:23,254 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:25,254 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:25,623 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:27:25,624 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:27:25,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:27:27,255 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:28,043 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:29,255 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:31,255 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:33,173 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:33,256 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:35,256 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:37,257 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:38,347 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:39,257 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:40,488 DEBUG   SenderThread:379383 [sender.py:send():379] send: stats
+2024-04-10 23:27:40,624 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:27:40,624 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:27:40,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:27:41,258 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:43,258 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:43,447 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:45,259 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:47,259 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:48,654 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:49,260 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:51,260 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:53,261 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:53,743 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:55,262 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:55,624 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:27:55,624 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:27:55,626 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:27:57,262 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:27:58,797 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:27:59,262 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:01,263 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:03,263 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:04,002 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:05,264 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:07,264 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:09,030 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:09,267 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:10,488 DEBUG   SenderThread:379383 [sender.py:send():379] send: stats
+2024-04-10 23:28:10,624 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:28:10,624 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:28:10,626 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:28:11,266 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:13,266 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:14,100 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:15,267 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:17,267 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:19,167 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:19,267 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:21,268 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:23,268 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:24,277 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:25,269 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:25,624 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:28:25,624 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:28:25,626 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:28:27,269 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:29,270 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:29,317 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:31,271 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:33,271 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:34,421 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:35,271 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:37,272 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:39,273 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:39,486 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:40,489 DEBUG   SenderThread:379383 [sender.py:send():379] send: stats
+2024-04-10 23:28:40,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:28:40,625 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:28:40,627 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:28:41,273 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:43,273 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:44,599 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:45,274 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:47,275 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:49,275 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:49,679 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:51,276 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:53,276 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:54,728 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:28:55,276 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:55,624 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:28:55,625 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:28:55,626 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:28:57,277 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:59,277 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:28:59,744 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:29:01,278 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:29:03,278 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:29:04,950 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:29:05,279 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:29:07,279 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:29:09,279 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:29:10,137 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:29:10,489 DEBUG   SenderThread:379383 [sender.py:send():379] send: stats
+2024-04-10 23:29:10,625 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:29:10,625 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:29:10,626 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:29:11,280 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:29:15,783 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:29:20,783 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:29:23,925 DEBUG   SenderThread:379383 [sender.py:send():379] send: exit
+2024-04-10 23:29:23,925 INFO    SenderThread:379383 [sender.py:send_exit():586] handling exit code: 1
+2024-04-10 23:29:23,925 INFO    SenderThread:379383 [sender.py:send_exit():588] handling runtime: 283
+2024-04-10 23:29:23,925 INFO    SenderThread:379383 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 23:29:23,925 INFO    SenderThread:379383 [sender.py:send_exit():594] send defer
+2024-04-10 23:29:23,925 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:23,925 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-10 23:29:23,926 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:23,926 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-10 23:29:23,926 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 1
+2024-04-10 23:29:23,926 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:23,926 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-10 23:29:23,926 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:23,926 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-10 23:29:23,926 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 2
+2024-04-10 23:29:23,926 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:23,926 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-10 23:29:23,926 INFO    HandlerThread:379383 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-10 23:29:23,927 DEBUG   SystemMonitor:379383 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-10 23:29:23,927 DEBUG   SystemMonitor:379383 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-10 23:29:23,927 INFO    HandlerThread:379383 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-10 23:29:23,927 INFO    HandlerThread:379383 [interfaces.py:finish():202] Joined disk monitor
+2024-04-10 23:29:23,973 INFO    HandlerThread:379383 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-10 23:29:23,973 INFO    HandlerThread:379383 [interfaces.py:finish():202] Joined memory monitor
+2024-04-10 23:29:23,973 INFO    HandlerThread:379383 [interfaces.py:finish():202] Joined network monitor
+2024-04-10 23:29:23,973 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:23,973 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-10 23:29:23,973 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 3
+2024-04-10 23:29:23,973 DEBUG   SenderThread:379383 [sender.py:send():379] send: stats
+2024-04-10 23:29:23,973 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:23,974 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-10 23:29:23,974 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:23,974 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-10 23:29:23,974 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 4
+2024-04-10 23:29:23,974 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:23,974 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-10 23:29:23,974 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:23,974 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-10 23:29:23,974 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 5
+2024-04-10 23:29:23,974 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:23,974 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-10 23:29:23,975 DEBUG   SenderThread:379383 [sender.py:send():379] send: summary
+2024-04-10 23:29:23,975 INFO    SenderThread:379383 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 23:29:23,975 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:23,975 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-10 23:29:23,975 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 6
+2024-04-10 23:29:23,975 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:23,975 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-10 23:29:23,976 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:23,976 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-10 23:29:23,976 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 7
+2024-04-10 23:29:23,976 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:29:23,976 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:23,976 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-10 23:29:23,976 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:23,976 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-10 23:29:24,285 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_created():271] file/dir created: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/wandb-summary.json
+2024-04-10 23:29:24,923 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 23:29:25,290 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 8
+2024-04-10 23:29:25,290 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 23:29:25,290 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:25,290 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-10 23:29:25,290 INFO    Thread-12 :379383 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:29:25,290 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:25,290 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-10 23:29:25,291 INFO    SenderThread:379383 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-10 23:29:25,291 INFO    SenderThread:379383 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-10 23:29:25,321 INFO    SenderThread:379383 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-10 23:29:25,323 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 9
+2024-04-10 23:29:25,323 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:25,324 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-10 23:29:25,324 DEBUG   SenderThread:379383 [sender.py:send():379] send: artifact
+2024-04-10 23:29:25,924 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 23:29:26,104 INFO    SenderThread:379383 [sender.py:send_artifact():1468] sent artifact job-git_github.com_stefannastasa_BachModels.git_src_train.py - {'id': 'QXJ0aWZhY3Q6NzkyMTcwOTg1', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2MTM3NzYxOQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzkyMTcwOTg1', 'versionIndex': 0}}}
+2024-04-10 23:29:26,104 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:26,104 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-10 23:29:26,104 INFO    SenderThread:379383 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-10 23:29:26,291 INFO    SenderThread:379383 [dir_watcher.py:finish():388] scan: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files
+2024-04-10 23:29:26,291 INFO    SenderThread:379383 [dir_watcher.py:finish():402] scan save: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/wandb-metadata.json wandb-metadata.json
+2024-04-10 23:29:26,291 INFO    SenderThread:379383 [dir_watcher.py:finish():402] scan save: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/wandb-summary.json wandb-summary.json
+2024-04-10 23:29:26,291 INFO    SenderThread:379383 [dir_watcher.py:finish():402] scan save: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/config.yaml config.yaml
+2024-04-10 23:29:26,293 INFO    SenderThread:379383 [dir_watcher.py:finish():402] scan save: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log output.log
+2024-04-10 23:29:26,293 INFO    SenderThread:379383 [dir_watcher.py:finish():402] scan save: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/requirements.txt requirements.txt
+2024-04-10 23:29:26,295 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 10
+2024-04-10 23:29:26,297 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 23:29:26,297 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:26,297 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-10 23:29:26,299 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:26,299 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-10 23:29:26,299 INFO    SenderThread:379383 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-10 23:29:26,805 INFO    wandb-upload_0:379383 [upload_job.py:push():131] Uploaded file /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/wandb-summary.json
+2024-04-10 23:29:26,817 INFO    wandb-upload_2:379383 [upload_job.py:push():131] Uploaded file /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/output.log
+2024-04-10 23:29:26,915 INFO    wandb-upload_3:379383 [upload_job.py:push():131] Uploaded file /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/requirements.txt
+2024-04-10 23:29:26,920 INFO    wandb-upload_1:379383 [upload_job.py:push():131] Uploaded file /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/files/config.yaml
+2024-04-10 23:29:26,924 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 23:29:26,925 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 23:29:27,121 INFO    Thread-11 (_thread_body):379383 [sender.py:transition_state():614] send defer: 11
+2024-04-10 23:29:27,121 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:27,121 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-10 23:29:27,121 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:27,121 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-10 23:29:27,121 INFO    SenderThread:379383 [file_pusher.py:join():178] waiting for file pusher
+2024-04-10 23:29:27,122 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 12
+2024-04-10 23:29:27,122 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:27,122 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-10 23:29:27,122 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:27,122 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-10 23:29:27,122 INFO    SenderThread:379383 [file_stream.py:finish():614] file stream finish called
+2024-04-10 23:29:27,600 INFO    SenderThread:379383 [file_stream.py:finish():618] file stream finish is done
+2024-04-10 23:29:27,601 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 13
+2024-04-10 23:29:27,601 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:27,601 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-10 23:29:27,601 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:27,601 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-10 23:29:27,601 INFO    SenderThread:379383 [sender.py:transition_state():614] send defer: 14
+2024-04-10 23:29:27,601 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 23:29:27,601 INFO    HandlerThread:379383 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-10 23:29:27,601 DEBUG   SenderThread:379383 [sender.py:send():379] send: final
+2024-04-10 23:29:27,602 DEBUG   SenderThread:379383 [sender.py:send():379] send: footer
+2024-04-10 23:29:27,602 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: defer
+2024-04-10 23:29:27,602 INFO    SenderThread:379383 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-10 23:29:27,602 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 23:29:27,602 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 23:29:27,603 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 23:29:27,603 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 23:29:27,603 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: server_info
+2024-04-10 23:29:27,603 DEBUG   SenderThread:379383 [sender.py:send_request():406] send_request: server_info
+2024-04-10 23:29:27,605 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-10 23:29:27,605 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-10 23:29:27,606 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:29:27,747 INFO    MainThread:379383 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-10 23:29:27,747 INFO    MainThread:379383 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-10 23:29:27,747 INFO    MainThread:379383 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-10 23:29:27,747 DEBUG   HandlerThread:379383 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-10 23:29:27,747 INFO    HandlerThread:379383 [handler.py:finish():866] shutting down handler
+2024-04-10 23:29:28,603 INFO    WriterThread:379383 [datastore.py:close():296] close: /home/tefan/projects/BachModels/src/wandb/run-20240410_232439-hjbjlnou/run-hjbjlnou.wandb
+2024-04-10 23:29:28,747 INFO    SenderThread:379383 [sender.py:finish():1546] shutting down sender
+2024-04-10 23:29:28,747 INFO    SenderThread:379383 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-10 23:29:28,747 INFO    SenderThread:379383 [file_pusher.py:join():178] waiting for file pusher

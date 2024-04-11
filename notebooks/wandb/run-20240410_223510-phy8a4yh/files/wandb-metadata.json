@@ -1,0 +1,87 @@
+{
+    "os": "Linux-6.5.0-25-generic-x86_64-with-glibc2.38",
+    "python": "3.11.6",
+    "heartbeatAt": "2024-04-10T19:35:11.668766",
+    "startedAt": "2024-04-10T19:35:10.972087",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "git@github.com:stefannastasa/BachModels.git",
+        "commit": "f6c40370170fc252cbfdeef7122a089f15f6207a"
+    },
+    "email": null,
+    "root": "/home/tefan/projects/BachModels",
+    "host": "tefans-homelab",
+    "username": "tefan",
+    "executable": "/home/tefan/projects/BachModels/.venv/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400.2425000000003,
+        "min": 800.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400.34,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.009,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.546,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.013,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.124,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2399.999,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2399.297,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2399.91,
+            "min": 800.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 107.50220108032227,
+            "used": 85.70341491699219
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1660 Ti",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.31381607055664
+    }
+}

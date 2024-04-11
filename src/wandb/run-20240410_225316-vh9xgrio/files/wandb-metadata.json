@@ -1,0 +1,88 @@
+{
+    "os": "Linux-6.5.0-25-generic-x86_64-with-glibc2.38",
+    "python": "3.11.6",
+    "heartbeatAt": "2024-04-10T19:53:17.337375",
+    "startedAt": "2024-04-10T19:53:16.588552",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/tefan/projects/BachModels/src/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "src/train.py",
+    "git": {
+        "remote": "git@github.com:stefannastasa/BachModels.git",
+        "commit": "f6c40370170fc252cbfdeef7122a089f15f6207a"
+    },
+    "email": null,
+    "root": "/home/tefan/projects/BachModels",
+    "host": "tefans-homelab",
+    "username": "tefan",
+    "executable": "/home/tefan/projects/BachModels/.venv/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3800.750375,
+        "min": 800.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3799.963,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3800.045,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3799.986,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3799.982,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3799.988,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3799.993,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3799.975,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3800.018,
+            "min": 800.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 107.50220108032227,
+            "used": 85.80259323120117
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1660 Ti",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.31381607055664
+    }
+}

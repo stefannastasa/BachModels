@@ -1,0 +1,60 @@
+2024-04-10 23:11:36,418 INFO    StreamThr :374765 [internal.py:wandb_internal():86] W&B internal server running at pid: 374765, started at: 2024-04-10 23:11:36.418013
+2024-04-10 23:11:36,421 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status
+2024-04-10 23:11:36,425 INFO    WriterThread:374765 [datastore.py:open_for_write():87] open: /home/tefan/projects/BachModels/src/wandb/run-20240410_231136-o138zjfk/run-o138zjfk.wandb
+2024-04-10 23:11:36,426 DEBUG   SenderThread:374765 [sender.py:send():379] send: header
+2024-04-10 23:11:36,432 DEBUG   SenderThread:374765 [sender.py:send():379] send: run
+2024-04-10 23:11:36,853 INFO    SenderThread:374765 [dir_watcher.py:__init__():211] watching files in: /home/tefan/projects/BachModels/src/wandb/run-20240410_231136-o138zjfk/files
+2024-04-10 23:11:36,853 INFO    SenderThread:374765 [sender.py:_start_run_threads():1124] run started: o138zjfk with start time 1712779896.418351
+2024-04-10 23:11:36,875 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: check_version
+2024-04-10 23:11:36,876 DEBUG   SenderThread:374765 [sender.py:send_request():406] send_request: check_version
+2024-04-10 23:11:37,058 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: run_start
+2024-04-10 23:11:37,081 DEBUG   HandlerThread:374765 [system_info.py:__init__():26] System info init
+2024-04-10 23:11:37,082 DEBUG   HandlerThread:374765 [system_info.py:__init__():41] System info init done
+2024-04-10 23:11:37,082 INFO    HandlerThread:374765 [system_monitor.py:start():194] Starting system monitor
+2024-04-10 23:11:37,082 INFO    SystemMonitor:374765 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-10 23:11:37,082 INFO    HandlerThread:374765 [system_monitor.py:probe():214] Collecting system info
+2024-04-10 23:11:37,083 INFO    SystemMonitor:374765 [interfaces.py:start():190] Started cpu monitoring
+2024-04-10 23:11:37,083 INFO    SystemMonitor:374765 [interfaces.py:start():190] Started disk monitoring
+2024-04-10 23:11:37,084 INFO    SystemMonitor:374765 [interfaces.py:start():190] Started gpu monitoring
+2024-04-10 23:11:37,085 INFO    SystemMonitor:374765 [interfaces.py:start():190] Started memory monitoring
+2024-04-10 23:11:37,086 INFO    SystemMonitor:374765 [interfaces.py:start():190] Started network monitoring
+2024-04-10 23:11:37,091 DEBUG   HandlerThread:374765 [system_info.py:probe():150] Probing system
+2024-04-10 23:11:37,093 DEBUG   HandlerThread:374765 [system_info.py:_probe_git():135] Probing git
+2024-04-10 23:11:37,098 DEBUG   HandlerThread:374765 [system_info.py:_probe_git():143] Probing git done
+2024-04-10 23:11:37,098 DEBUG   HandlerThread:374765 [system_info.py:probe():198] Probing system done
+2024-04-10 23:11:37,099 DEBUG   HandlerThread:374765 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-25-generic-x86_64-with-glibc2.38', 'python': '3.11.6', 'heartbeatAt': '2024-04-10T20:11:37.091578', 'startedAt': '2024-04-10T20:11:36.409274', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/tefan/projects/BachModels/src/train.py', 'codePathLocal': 'train.py', 'codePath': 'src/train.py', 'git': {'remote': 'git@github.com:stefannastasa/BachModels.git', 'commit': 'f6c40370170fc252cbfdeef7122a089f15f6207a'}, 'email': None, 'root': '/home/tefan/projects/BachModels', 'host': 'tefans-homelab', 'username': 'tefan', 'executable': '/home/tefan/projects/BachModels/.venv/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3725.74875, 'min': 800.0, 'max': 4200.0}, 'cpu_freq_per_core': [{'current': 3998.71, 'min': 800.0, 'max': 4200.0}, {'current': 4001.612, 'min': 800.0, 'max': 4200.0}, {'current': 4000.33, 'min': 800.0, 'max': 4200.0}, {'current': 4017.412, 'min': 800.0, 'max': 4200.0}, {'current': 3997.627, 'min': 800.0, 'max': 4200.0}, {'current': 4006.246, 'min': 800.0, 'max': 4200.0}, {'current': 4056.525, 'min': 800.0, 'max': 4200.0}, {'current': 4000.073, 'min': 800.0, 'max': 4200.0}], 'disk': {'/': {'total': 107.50220108032227, 'used': 85.82047653198242}}, 'gpu': 'NVIDIA GeForce GTX 1660 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1660 Ti', 'memory_total': 6442450944}], 'memory': {'total': 15.31381607055664}}
+2024-04-10 23:11:37,099 INFO    HandlerThread:374765 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-10 23:11:37,099 INFO    HandlerThread:374765 [system_monitor.py:probe():227] Publishing system info
+2024-04-10 23:11:37,099 INFO    HandlerThread:374765 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-10 23:11:37,101 DEBUG   SenderThread:374765 [sender.py:send():379] send: files
+2024-04-10 23:11:37,101 INFO    SenderThread:374765 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-10 23:11:37,178 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-10 23:11:37,178 DEBUG   SenderThread:374765 [sender.py:send_request():406] send_request: python_packages
+2024-04-10 23:11:37,179 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:11:37,179 DEBUG   SenderThread:374765 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:11:37,181 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:11:37,462 DEBUG   SenderThread:374765 [sender.py:send():379] send: telemetry
+2024-04-10 23:11:37,837 INFO    wandb-upload_0:374765 [upload_job.py:push():131] Uploaded file /tmp/tmp4nm_s9t2wandb/pfsdembr-wandb-metadata.json
+2024-04-10 23:11:37,853 INFO    Thread-12 :374765 [dir_watcher.py:_on_file_created():271] file/dir created: /home/tefan/projects/BachModels/src/wandb/run-20240410_231136-o138zjfk/files/output.log
+2024-04-10 23:11:37,854 INFO    Thread-12 :374765 [dir_watcher.py:_on_file_created():271] file/dir created: /home/tefan/projects/BachModels/src/wandb/run-20240410_231136-o138zjfk/files/wandb-metadata.json
+2024-04-10 23:11:37,854 INFO    Thread-12 :374765 [dir_watcher.py:_on_file_created():271] file/dir created: /home/tefan/projects/BachModels/src/wandb/run-20240410_231136-o138zjfk/files/requirements.txt
+2024-04-10 23:11:39,853 INFO    Thread-12 :374765 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_231136-o138zjfk/files/output.log
+2024-04-10 23:11:41,464 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:11:46,464 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:11:51,465 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:11:52,179 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:11:52,179 DEBUG   SenderThread:374765 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:11:52,222 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:11:57,359 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:12:02,360 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:12:07,179 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:12:07,179 DEBUG   SenderThread:374765 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:12:07,222 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:12:08,346 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:12:08,860 INFO    Thread-12 :374765 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/tefan/projects/BachModels/src/wandb/run-20240410_231136-o138zjfk/files/config.yaml
+2024-04-10 23:12:13,504 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:12:18,504 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 23:12:22,178 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 23:12:22,179 DEBUG   SenderThread:374765 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 23:12:22,222 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 23:12:24,398 DEBUG   HandlerThread:374765 [handler.py:handle_request():146] handle_request: status_report

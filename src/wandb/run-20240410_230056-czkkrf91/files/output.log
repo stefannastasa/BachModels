@@ -1,0 +1,27 @@
+
+  0%|          | 0/10 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/tefan/projects/BachModels/src/train.py", line 123, in <module>
+    trainer.train()
+  File "/home/tefan/projects/BachModels/src/train.py", line 74, in train
+    train_loss, train_cer, train_wer = self.train_epoch()
+                                       ^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/train.py", line 50, in train_epoch
+    output_logits, loss = self.model.forward_teacher_forcing(inputs, labels)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 257, in forward_teacher_forcing
+    logits = self.decoder.forward_teacher_forcing(memory, targets)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 186, in forward_teacher_forcing
+    tgt = self.pos_emb(self.emb(tgt) * math.sqrt(self.d_model))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 30, in forward
+    return x + self.pe[:, :T]
+           ~~^~~~~~~~~~~~~~~~
+RuntimeError: The size of tensor a (541) must match the size of tensor b (500) at non-singleton dimension 1

@@ -1,0 +1,62 @@
+  0%|          | 0/10 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/tefan/projects/BachModels/src/train.py", line 123, in <module>
+    trainer.train()
+  File "/home/tefan/projects/BachModels/src/train.py", line 74, in train
+    train_loss, train_cer, train_wer = self.train_epoch()
+                                       ^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/train.py", line 50, in train_epoch
+    output_logits, sampled_ids, loss = self.model.forward_teacher_forcing(inputs, labels)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 253, in forward_teacher_forcing
+    memory = self.encoder(imgs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 91, in forward
+    x = self.encoder(imgs.unsqueeze(1))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torchvision/models/resnet.py", line 96, in forward
+    out = self.conv2(out)
+          ^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 0 has a total capacity of 5.79 GiB of which 51.88 MiB is free. Process 369056 has 2.84 GiB memory in use. Including non-PyTorch memory, this process has 2.38 GiB memory in use. Of the allocated memory 2.27 GiB is allocated by PyTorch, and 23.12 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

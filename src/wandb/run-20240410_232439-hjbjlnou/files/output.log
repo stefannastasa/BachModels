@@ -1,0 +1,170 @@
+
+#.Epoch 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉ | 1227/1232 [04:28<00:01,  4.64it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1232/1232 [04:29<00:00,  4.58it/s]
+/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torchmetrics/utilities/prints.py:43: UserWarning: The ``compute`` method of metric CharacterErrorRate was called before the ``update`` method which may lead to errors, as metric states have not yet been updated.
+  warnings.warn(*args, **kwargs)  # noqa: B028
+/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torchmetrics/utilities/prints.py:43: UserWarning: The ``compute`` method of metric WordErrorRate was called before the ``update`` method which may lead to errors, as metric states have not yet been updated.
+  warnings.warn(*args, **kwargs)  # noqa: B028
+  0%|                                                                                                                                                                                                                                                                                       | 0/154 [00:14<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/tefan/projects/BachModels/src/train.py", line 124, in <module>
+    trainer.train()
+  File "/home/tefan/projects/BachModels/src/train.py", line 76, in train
+    val_loss, val_cer, val_wer = self.val_epoch()
+                                 ^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/train.py", line 66, in val_epoch
+    output_logits, sampled_ids, loss = self.model(inputs, labels)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 246, in forward
+    logits, sampled_ids = self.decoder(self.encoder(imgs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tefan/projects/BachModels/src/model.py", line 160, in forward
+    self.pos_emb.pe[:, len(sampled_ids)] + self.emb(pred) * math.sqrt(self.d_model)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+IndexError: index 681 is out of bounds for dimension 1 with size 681

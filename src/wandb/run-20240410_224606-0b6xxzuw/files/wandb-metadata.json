@@ -1,0 +1,88 @@
+{
+    "os": "Linux-6.5.0-25-generic-x86_64-with-glibc2.38",
+    "python": "3.11.6",
+    "heartbeatAt": "2024-04-10T19:46:07.541891",
+    "startedAt": "2024-04-10T19:46:06.805697",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/tefan/projects/BachModels/src/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "src/train.py",
+    "git": {
+        "remote": "git@github.com:stefannastasa/BachModels.git",
+        "commit": "f6c40370170fc252cbfdeef7122a089f15f6207a"
+    },
+    "email": null,
+    "root": "/home/tefan/projects/BachModels",
+    "host": "tefans-homelab",
+    "username": "tefan",
+    "executable": "/home/tefan/projects/BachModels/.venv/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 4089.623,
+        "min": 800.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4000.8,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4040.222,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4024.544,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4001.198,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4026.815,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4002.304,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4025.696,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4019.054,
+            "min": 800.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 107.50220108032227,
+            "used": 85.8012924194336
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1660 Ti",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.31381607055664
+    }
+}

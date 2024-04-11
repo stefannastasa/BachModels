@@ -1,0 +1,1 @@
+{"Train Loss": 3.1693271559167218, "Val Loss": 3.1764596592296255, "Cer Train": NaN, "Cer Val": NaN, "Wer Train": NaN, "Wer Val": NaN, "_timestamp": 1712809839.248151, "_runtime": 26445.65420103073, "_step": 9, "_wandb": {"runtime": 26444}}

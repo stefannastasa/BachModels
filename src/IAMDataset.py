@@ -48,7 +48,9 @@ class IAMDataset(Dataset):
                 "target_enc",
                 self.data["target_seq"].apply(
                     lambda x: np.array(
-                        self.embedding_loader.encode_labels([c for c in x])
+                        self.embedding_loader.encode_labels(
+                            [c for c in (x)]
+                        )
                     )
                 )
             )
@@ -76,6 +78,9 @@ class IAMDataset(Dataset):
 
     def __len__(self):
         return len(self.data)
+
+    def max_seq_length(self):
+        return self.data["target_len"].max()
 
     def _get_data(self) -> pd.DataFrame:
         data = {

@@ -1,0 +1,46 @@
+wandb_version: 1
+
+run_name:
+  desc: null
+  value: Testing_run
+learning_rate:
+  desc: null
+  value: 0.001
+epochs:
+  desc: null
+  value: 10
+dataset:
+  desc: null
+  value: IAM_forms
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.6
+    cli_version: 0.16.6
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1712779378.0
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 80
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 80
+      3:
+      - 16
+      - 23
+      4: 3.11.6
+      5: 0.16.6
+      8:
+      - 5
+      13: linux-x86_64
