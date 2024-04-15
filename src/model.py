@@ -163,6 +163,7 @@ class decoderHTR(nn.Module):
         )
         tgt = self.drop(tgt)
         eos_sampled = torch.zeros(B).bool()
+
         for t in range(self.max_seq_len):
             tgt_mask = self.subsequent_mask(len(sampled_ids)).to(memory.device)
             out = self.decoder(tgt, memory, tgt_mask=tgt_mask)
@@ -233,10 +234,10 @@ class FullPageHTR(nn.Module):
                  nhead=4,
                  dim_feedforward=1024,
                  encoder_name="resnet18",
-                 drop_enc=0.1,
-                 drop_dec=0.1,
+                 drop_enc=0.5,
+                 drop_dec=0.5,
                  activ_dec="gelu",
-                 label_smoothing=0.0,
+                 label_smoothing=0.1,
                  vocab_len: Optional[int] = None):
         super().__init__()
         self.eos_token_idx, self.sos_token_idx, self.pad_token_idx = label_encoder.encode_labels(
