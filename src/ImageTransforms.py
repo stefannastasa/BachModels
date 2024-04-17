@@ -69,7 +69,7 @@ class ImageTransforms:
     scale: float = (
         0.5
     )
-    random_scale_limit: float = 0.5
+    random_scale_limit: float = 0.1
     random_rotate_limit: int = 10
 
     train_trnsf: A.Compose = field(init=False)
